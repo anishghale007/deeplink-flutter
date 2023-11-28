@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:app_links/app_links.dart';
-import 'package:deeplink/second_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -91,14 +90,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
     // Handle link when app is in warm state (front or background)
     _linkSubscription = _appLinks.uriLinkStream.listen((uri) {
-      // setState(() {
-      //   link = uri.toString();
-      // });
-      if (uri.toString().contains('/hello/')) {
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => const SecondScreen(),
-        ));
-      }
+      setState(() {
+        link = uri.toString();
+      });
+      // if (uri.toString().contains('/hello')) {
+      //   Navigator.of(context).push(MaterialPageRoute(
+      //     builder: (context) => const SecondScreen(),
+      //   ));
+      // }
     });
   }
 
