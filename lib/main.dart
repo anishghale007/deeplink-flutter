@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
       // routerConfig: router,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.cyanAccent),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.pinkAccent),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -81,7 +81,8 @@ class _MyHomePageState extends State<MyHomePage> {
     _appLinks = AppLinks();
 
     // Check initial link if app was in cold state (terminated)
-    final appLink = await _appLinks.getInitialAppLink();
+    final appLink = await _appLinks.getLatestAppLinkString();
+    // final appLink = await _appLinks.getInitialAppLink();
     if (appLink != null) {
       setState(() {
         link = appLink.toString();
