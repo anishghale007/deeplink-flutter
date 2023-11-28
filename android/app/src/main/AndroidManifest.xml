@@ -40,9 +40,9 @@
 
                 <!-- If a user clicks on a shared link that uses the "http" scheme, your
                     app should be able to delegate that traffic to "https". -->
-                <data android:scheme="http" />
-                <data android:scheme="https" android:pathPrefix="/hello/" />
-                <data android:host="deeplink-flutter.netlify.app" />
+                <!-- <data android:scheme="http" /> -->
+                <data android:scheme="https" android:host="deeplink-flutter.netlify.app" android:pathPrefix="/hello" />
+                <!-- <data android:host="deeplink-flutter.netlify.app" /> -->
             </intent-filter>
 
         </activity>
