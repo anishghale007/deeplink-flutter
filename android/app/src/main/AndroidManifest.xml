@@ -38,7 +38,6 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="http" android:host="deeplink-flutter.netlify.app"  />
                 <data android:scheme="https" android:host="deeplink-flutter.netlify.app"  />
-                <!-- <data android:host="deeplink-flutter.netlify.app" /> -->
             </intent-filter>
 
 
