@@ -23,8 +23,8 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-            <!-- <meta-data android:name="flutter_deeplinking_enabled" android:value="true" />
-            <intent-filter android:autoVerify="true">
+            <meta-data android:name="flutter_deeplinking_enabled" android:value="true" />
+            <!-- <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
@@ -40,8 +40,8 @@
 
                 <!-- If a user clicks on a shared link that uses the "http" scheme, your
                     app should be able to delegate that traffic to "https". -->
-                <data android:scheme="http" android:host="deeplink-flutter.netlify.app" android:pathPrefix="/hello"  />
-                <data android:scheme="https" android:host="deeplink-flutter.netlify.app" android:pathPrefix="/hello" />
+                <data android:scheme="http" android:host="deeplink-flutter.netlify.app"  />
+                <data android:scheme="https" />
                 <!-- <data android:host="deeplink-flutter.netlify.app" /> -->
             </intent-filter>
 
