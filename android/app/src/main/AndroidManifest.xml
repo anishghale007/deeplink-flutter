@@ -36,8 +36,8 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="saarang.com.np"  />
-                <data android:scheme="https" android:host="saarang.com.np"  />
+                <data android:scheme="http" android:host="deeplink-flutter.netlify.app"  />
+                <data android:scheme="https" android:host="deeplink-flutter.netlify.app"  />
             </intent-filter>
 
 
